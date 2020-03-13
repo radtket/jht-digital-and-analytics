@@ -1,0 +1,83 @@
+.nav-card {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2);
+  cursor: pointer;
+  display: block;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 50px 30px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out 0s;
+
+  &:hover {
+    background: #761A4D;
+    color: #ffffff;
+
+    .cls-2,
+    .cls-3 {
+      fill: #ffffff;
+    }
+
+    .cls-1 {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    h4 {
+      color: #ffffff;
+    }
+
+    p {
+      color: #ffffff;
+    }
+
+    span {
+      color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .cls-1 {
+    fill: #d4e1f4
+  }
+
+  .cls-2 {
+    fill: #761a4d
+  }
+
+  .cls-3 {
+    fill: #5b3a76;
+  }
+
+  svg {
+    height: 56px;
+  }
+
+  h4 {
+    color: #212529;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 16px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
+
+  span {
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.03);
+    font-family: $heading-font-family;
+    font-size: 250px;
+    font-weight: 500;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    transition: .4s;
+  }
+}
