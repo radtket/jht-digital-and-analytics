@@ -1,0 +1,53 @@
+.topnav {
+  @include position(fixed, 0 0 null null);
+  background: transparent;
+  height: 70px;
+  transition: background 0.7s;
+  width: 100%;
+  z-index: 100;
+
+  &.topnav-fixed {
+    background: #5b3a76;
+  }
+
+  .container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .logo {
+    float: left;
+    margin-top: 23px;
+
+    >svg {
+      display: block;
+      fill: #fff;
+      height: 24px;
+      transition: fill 0.7s;
+    }
+  }
+
+
+  nav {
+    float: right;
+
+    li {
+      float: left;
+    }
+
+    a {
+      color: #fff;
+      display: inline-block;
+      font-family: $heading-font-family;
+      font-size: 16px;
+      margin-right: 30px;
+      padding: 24px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

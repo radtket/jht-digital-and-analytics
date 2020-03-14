@@ -67,7 +67,9 @@ rules:
   empty-args: 1
   hex-length: 1
   hex-notation: 1
-  indentation: 1
+  indentation:
+    - 1
+    - style: tab
   leading-zero: 0
   max-line-length: 0
   max-file-line-count: 0
