@@ -1,0 +1,44 @@
+.page-title {
+  margin-bottom: 48px;
+
+  h3 {
+    color: #212529;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 36px;
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+      background-color: #761A4D;
+      bottom: -16px;
+      content: "";
+      height: 4px;
+      position: absolute;
+      width: 80px;
+    }
+  }
+
+  p {
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    text-align: center;
+
+    h3 {
+      &::before {
+        left: 50%;
+        margin-left: -40px;
+      }
+    }
+  }
+}

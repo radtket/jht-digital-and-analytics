@@ -101,6 +101,10 @@ body {
   @include grid-column(4);
 }
 
+.col-md-3 {
+  @include grid-column(3);
+}
+
 .col-md-6 {
   @include grid-column(6);
 
