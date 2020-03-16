@@ -45,6 +45,10 @@
       text-decoration: none;
       text-transform: uppercase;
 
+      &.active {
+        color: #bada55;
+      }
+
       &:last-of-type {
         margin-right: 0;
       }
