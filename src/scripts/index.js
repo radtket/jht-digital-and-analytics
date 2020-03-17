@@ -52,3 +52,21 @@ document.querySelector(".scroll").addEventListener("click", () => {
     window.scroll(0, window.pageYOffset - 50);
   }, 16.66);
 });
+
+// Modal
+const modalTriggers = document.querySelectorAll(`[data-modal-for]`);
+
+Object.values(modalTriggers).forEach(trigger => {
+  const modal = document.getElementById(trigger.dataset.modalFor);
+  trigger.addEventListener("click", () => {
+    if (trigger.hasAttribute("open")) {
+      modal.showModal();
+      document.querySelector("body").classList.add("scroll-lock");
+    }
+
+    if (trigger.hasAttribute("close")) {
+      modal.close();
+      document.querySelector("body").classList.remove("scroll-lock");
+    }
+  });
+});
