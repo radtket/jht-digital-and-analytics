@@ -1,13 +1,31 @@
 .leadership-card {
   display: block;
-  margin-bottom: 64px;
   position: relative;
+  border: none;
+  margin: 0 0 64px 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 
   img {
     border-radius: 4px;
     display: block;
+    height: 270px;
     position: relative;
-    width: 100%;
   }
 
   .cta {
