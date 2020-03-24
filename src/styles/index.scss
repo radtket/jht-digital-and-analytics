@@ -4,6 +4,7 @@
 // Modules
 @import "./core/variables";
 
+@import "./core/backgrounds";
 @import "./core/buttons";
 @import "./core/forms";
 @import "./core/layout";
@@ -20,3 +21,7 @@
 @import "./components/page-title";
 @import "./components/vendor-card";
 @import "./components/modal";
+
+// Sections
+@import "./sections/about";
+@import "./sections/capabilities";

@@ -1,0 +1,15 @@
+.capabilities {
+
+
+  .nav-card {
+    &--wrap {
+      @media only screen and (min-width: 650px) {
+        @include grid-column(6);
+      }
+
+      @media only screen and (min-width: 972px) {
+        @include grid-column(4);
+      }
+    }
+  }
+}

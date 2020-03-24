@@ -1,0 +1,31 @@
+.about {
+  .container {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &--text {
+    @media only screen and (min-width: 768px) {
+      @include grid-column(6);
+    }
+
+    p {
+      color: $c-gray-400;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.7;
+      text-transform: none;
+    }
+  }
+
+  &--image {
+    @media only screen and (min-width: 768px) {
+      @include grid-column(5);
+      @include grid-push(1);
+      align-self: center;
+      display: flex;
+    }
+  }
+}
