@@ -2,7 +2,7 @@
   display: block;
   position: relative;
   border: none;
-  margin: 0 0 64px 0;
+  margin: 0 auto 64px auto;
   padding: 0;
   width: auto;
   overflow: visible;
@@ -14,7 +14,17 @@
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
 
+  &--wrap {
+    @include grid-column(6);
 
+    @media only screen and (min-width: 768px) {
+      @include grid-column(4);
+    }
+
+    @media only screen and (min-width: 1024px) {
+      @include grid-column(3);
+    }
+  }
 
   &::-moz-focus-inner {
     border: 0;

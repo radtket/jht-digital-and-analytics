@@ -1,27 +1,50 @@
-@import "../../node_modules/bourbon/core/bourbon";
-@import "../../node_modules/bourbon-neat/core/neat";
+@import '../../node_modules/bourbon/core/bourbon';
+@import '../../node_modules/bourbon-neat/core/neat';
 
 // Modules
-@import "./core/variables";
+@import './core/variables';
 
-@import "./core/backgrounds";
-@import "./core/buttons";
-@import "./core/forms";
-@import "./core/layout";
-@import "./core/lists";
-@import "./core/media";
-@import "./core/tables";
-@import "./core/typography";
+html {
+  background-color: $viewport-background-color;
+  box-sizing: border-box;
+}
 
-// Components
-@import "./components/hero";
-@import "./components/leadership-card";
-@import "./components/nav-card";
-@import "./components/navbar";
-@import "./components/page-title";
-@import "./components/vendor-card";
-@import "./components/modal";
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-// Sections
-@import "./sections/about";
-@import "./sections/capabilities";
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#page-wrap {
+  @import './core/normalize';
+  @import './core/backgrounds';
+  @import './core/buttons';
+  @import './core/forms';
+  @import './core/layout';
+  @import './core/lists';
+  @import './core/media';
+  @import './core/tables';
+  @import './core/typography';
+
+  // Components
+  @import './components/hero';
+  @import './components/leadership-card';
+  @import './components/nav-card';
+  @import './components/navbar';
+  @import './components/page-title';
+  @import './components/vendor-card';
+  @import './components/modal';
+
+  // Sections
+  @import './sections/about';
+  @import './sections/capabilities';
+}
