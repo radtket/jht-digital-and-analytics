@@ -25,6 +25,8 @@ body {
 }
 
 #page-wrap {
+  position: relative;
+
   @import "./core/normalize";
   @import "./core/backgrounds";
   @import "./core/buttons";
