@@ -1,6 +1,23 @@
 .vendor-card {
   margin-bottom: 48px;
 
+  &--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--wrap {
+    @include grid-column(6);
+
+    @media only screen and (min-width: 768px) {
+      @include grid-column(4);
+    }
+
+    @media only screen and (min-width: 1024px) {
+      @include grid-column(3);
+    }
+  }
+
   figure {
     align-items: center;
     display: flex;
