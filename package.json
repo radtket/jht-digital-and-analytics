@@ -8,7 +8,7 @@
     "clean-coverage": "rimraf scr/tests-reports",
     "start": "parcel src/index.html ./ --out-dir docs",
     "lint": "eslint src/scripts/*",
-    "build": "parcel build src/index.html --public-url ./ --out-dir docs",
+    "build": "parcel build src/index.html  --no-minify --public-url ./ --out-dir docs",
     "docs": "npm run clean-docs && npm run build",
     "test": "jest --watchAll",
     "test-report": "npm run clean-coverage && jest --coverage"
